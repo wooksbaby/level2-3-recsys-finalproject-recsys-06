@@ -28,17 +28,17 @@
 
 ## 사용법
 - **기본 검색**
-  - /search/{query}/{n}
+  - **/search/{query}/{n}**
     - item과 store 검색
     - n은 query에 직접 해당하는 bm25 검색 출력 개수
     - fastText 출력 결과에 해당하는 검색 n개 (중복 항목은 제거)
     - fastText 출력 결과 deafult는 5개
 - **이벤트 검색**
-  - /search/event/{query}
+  - **/search/event/{query}**
     - query에 직접 해당하는 검색 출력 개수
     - 해당 검색은 query like로 직접 검색
 - **bm25 모델 저장**
-  - /save/bm25
+  - **/save/bm25**
     - DB에 저장되어 있는 item, store 정보를 기반으로 bm25 모델 결과 저장
     - batch serving으로 주기적 실행 필요
 
